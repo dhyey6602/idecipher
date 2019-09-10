@@ -1,0 +1,171 @@
+  @-webkit-keyframes leftDot {
+	10% {
+	  left: 28px;
+	  top: 17px;
+	  width: 82px;
+	  height: 2px;
+	}
+	30% {
+	  left: 28px;
+	  top: 17px;
+	  width: 2px;
+	  height: 2px;
+	}
+	35% {
+	  left: 28px;
+	  top: 17px;
+	  width: 2px;
+	  height: 11px;
+	}
+	40% {
+	  left: 28px;
+	  top: 26px;
+	  width: 2px;
+	  height: 2px;
+	}
+	45% {
+	  left: 8px;
+	  top: 26px;
+	  width: 20px;
+	  height: 2px;
+	}
+	50% {
+	  left: 8px;
+	  top: 26px;
+	  width: 2px;
+	  height: 2px;
+	}
+	55% {
+	  left: 8px;
+	  top: 17px;
+	  width: 2px;
+	  height: 8px;
+	}
+	60% {
+	  left: 8px;
+	  top: 17px;
+	  width: 2px;
+	  height: 2px;
+	}
+	90% {
+	  left: 8px;
+	  top: 17px;
+	  width: 106px;
+	  height: 2px;
+	}
+  }
+  
+  @-webkit-keyframes rightDot {
+	10% {
+	  right: 28px;
+	  top: 17px;
+	  width: 82px;
+	  height: 2px;
+	}
+	30% {
+	  right: 28px;
+	  top: 17px;
+	  width: 2px;
+	  height: 2px;
+	}
+	35% {
+	  right: 28px;
+	  top: 17px;
+	  width: 2px;
+	  height: 11px;
+	}
+	40% {
+	  right: 28px;
+	  top: 26px;
+	  width: 2px;
+	  height: 2px;
+	}
+	45% {
+	  right: 8px;
+	  top: 26px;
+	  width: 20px;
+	  height: 2px;
+	}
+	50% {
+	  right: 8px;
+	  top: 26px;
+	  width: 2px;
+	  height: 2px;
+	}
+	55% {
+	  right: 8px;
+	  top: 17px;
+	  width: 2px;
+	  height: 8px;
+	}
+	60% {
+	  right: 8px;
+	  top: 17px;
+	  width: 2px;
+	  height: 2px;
+	}
+	90% {
+	  right: 8px;
+	  top: 17px;
+	  width: 106px;
+	  height: 2px;
+	}
+  } 
+  .techNav {
+	margin: 25%;
+	width: 400px;
+ }
+  
+  .techNav li {
+	list-style: none;
+	position: relative;
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 1px solid hsla(180,80%, 80%, 1);
+	
+	font-family: 'Electrolize', sans-serif;
+	color: hsla(180, 80%, 80%, 1);
+	cursor: pointer;
+	text-align: center;
+	letter-spacing: 2px;
+	background: hsla(200, 20%, 14%, 1);
+  }
+  
+  .techNav li:before,
+  .techNav li:after {
+	content: "";
+	display: block;
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	top: 17px;
+	background: hsla(180, 80%, 80%, 1);
+  }
+  
+  .techNav li:before {
+	left: 120px;
+  }
+  
+  .techNav li:after {
+	right: 120px;
+  }
+  
+  .techNav li:hover {
+	background: -webkit-radial-gradient(center, ellipse cover, hsla(200, 50%, 20%, 1) 0%, hsla(200, 20%, 14%, 1) 60%);
+  }
+  
+  .techNav li:hover:before {
+	-webkit-animation: leftDot 1s;
+  }
+  
+  .techNav li:hover:after {
+	-webkit-animation: rightDot 1s;
+  }
+  body{
+	background: hsla(200, 20%, 14%, 1);
+ }
+input{
+	background: none;
+	border: none;
+	outline: none;
+}
