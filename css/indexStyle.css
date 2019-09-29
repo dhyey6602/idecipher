@@ -62,6 +62,7 @@ body {
   color: #00d6fc;
   text-shadow: 0 0 8px rgba(0, 214, 252, 0.4);
   font-weight: 600;
+  transform: scale(1.1);
 }
 .kave-btn:hover.kave-btn:before {
   left: 0;

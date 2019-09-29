@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/loginStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body ng-controller="RegisterCtrl" ng-app="myApp">
+    <div class="container">
+        <div id="signup" style="height:400px;">
+            <div class="signup-screen">
+                <div class="space-bot text-center">
+                    <h1>i.Decipher</h1>
+                    <div class="divider"></div>
+                </div>
+                <form class="form-register" method="post" name="register" novalidate>
+                    <div class="input-field col s10 m8">
+                        <input id="team-name" type="text" class="validate" required style="color: white;">
+                        <label for="team-name">Team Name</label>
+                    </div>
+                    <div class="input-field col s10 m8">
+                        <input id="password" type="password" name="password" ng-model="password" ng-minlength='6'
+                            class="validate" required style="color: white;">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="space-top text-center">
+                        <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done" >
+                            <i class="material-icons left">done</i><a style="color: black;"href="success.html">Let Me In.</a>
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+            <br><br><br><br><br><br>
+            </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script>
+        var myApp = angular.module("myApp", []);
+        myApp.controller("RegisterCtrl", function ($scope) {
+
+        });
+    </script>
+    <script src="js/three.r92.min.js"></script>
+    <script src="js/vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+            el: "div #signup",
+            color: 0x60607
+        })
+    </script>
+</body>
+
+</html>
